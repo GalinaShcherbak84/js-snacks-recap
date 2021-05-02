@@ -283,12 +283,11 @@ const app = new Vue({
                 attivo: true,
             },
         ],
-        indexContatto: 0,
+        
     },
     methods:{
         funzione(index){
-            this.indexContatto = index;
-            console.log(this.contatti[this.indexContatto].nome)
+            console.log(this.contatti[index].nome)
         }
     }
 })
